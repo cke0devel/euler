@@ -14,3 +14,6 @@ function divisor(n::Int, sorted::Bool=true)
     return l
 end
 
+function digits2num(d)
+    return sum(k*(10^(i-1)) for (i,k) in enumerate(d))
+end
