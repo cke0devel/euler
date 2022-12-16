@@ -17,3 +17,7 @@ end
 function digits2num(d)
     return sum(k*(10^(i-1)) for (i,k) in enumerate(d))
 end
+
+function isSquare(n)
+    return trunc(Int, sqrt(n))^2 == n
+end
