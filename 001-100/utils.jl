@@ -15,7 +15,7 @@ function divisor(n::Int, sorted::Bool=true)
 end
 
 function digits2num(d)
-    return sum(k*(10^(i-1)) for (i,k) in enumerate(d))
+    return sum(k*(BigInt(10)^(i-1)) for (i,k) in enumerate(d))
 end
 
 function isSquare(n)
